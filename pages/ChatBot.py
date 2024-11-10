@@ -56,7 +56,7 @@ if prompt := st.chat_input("What is up?"):
 
 
 # CSSファイルを作成
-with open("../style.css") as f:
+with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # フッターを作成
