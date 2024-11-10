@@ -12,7 +12,10 @@ with open("style.css") as f:
 
 # フッターを作成
 st.markdown("""
-<footer>
-  <p>Creator : k.kansuke823@gmail.com</p>
-</footer>
+            <head>
+                <title>Ai am : AI Platform</title>
+            </head>
+            <footer>
+                <p>Creator : k.kansuke823@gmail.com</p>
+            </footer>
 """, unsafe_allow_html=True)
