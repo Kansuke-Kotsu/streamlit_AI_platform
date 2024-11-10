@@ -8,13 +8,6 @@ import time
 st.title("💬 Simple Chatbot")
 st.write("This is a simple chatbot that uses several models to generate responses. ")
 
-# フッターを作成
-st.markdown("""
-<footer>
-  <p>Creator : k.kansuke823@gmail.com</p>
-</footer>
-""", unsafe_allow_html=True)
-
 # API Keyをセット
 os.environ["GOOGLE_API_KEY"] = st.secrets["gemini_key"]
 
@@ -60,3 +53,15 @@ if prompt := st.chat_input("What is up?"):
 
         # Store the complete response in session state
         st.session_state.messages.append(["assistant", ai_msg.content])
+
+
+# CSSファイルを作成
+with open("../style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# フッターを作成
+st.markdown("""
+<footer>
+  <p>Creator : k.kansuke823@gmail.com</p>
+</footer>
+""", unsafe_allow_html=True)

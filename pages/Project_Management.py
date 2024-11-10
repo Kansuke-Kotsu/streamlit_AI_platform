@@ -11,13 +11,6 @@ from email.mime.multipart import MIMEMultipart
 # APIキーをコード内に直接記載するのは避け、環境変数やStreamlitのシークレットマネージャーを使用してください。
 # 例: os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-# フッターを作成
-st.markdown("""
-<footer>
-  <p>Creator : k.kansuke823@gmail.com</p>
-</footer>
-""", unsafe_allow_html=True)
-
 # LLMを初期化
 os.environ["GOOGLE_API_KEY"] = st.secrets["gemini_key"]
 llm = ChatGoogleGenerativeAI(
@@ -349,3 +342,15 @@ else:
         if st.button("トップページに戻る"):
             reset_session()
             st.rerun()
+
+
+# CSSファイルを作成
+with open("../style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# フッターを作成
+st.markdown("""
+<footer>
+  <p>Creator : k.kansuke823@gmail.com</p>
+</footer>
+""", unsafe_allow_html=True)
