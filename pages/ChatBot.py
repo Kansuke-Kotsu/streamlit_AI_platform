@@ -54,14 +54,3 @@ if prompt := st.chat_input("What is up?"):
         # Store the complete response in session state
         st.session_state.messages.append(["assistant", ai_msg.content])
 
-
-# CSSファイルを作成
-with open("style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-# フッターを作成
-st.markdown("""
-<footer>
-  <p>Creator : k.kansuke823@gmail.com</p>
-</footer>
-""", unsafe_allow_html=True)

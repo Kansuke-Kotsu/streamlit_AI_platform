@@ -50,13 +50,3 @@ if st.button("記事生成"):
             output_area.write(generated_text)  # 現在の内容を表示
 
 
-# CSSファイルを作成
-with open("../style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-# フッターを作成
-st.markdown("""
-<footer>
-  <p>Creator : k.kansuke823@gmail.com</p>
-</footer>
-""", unsafe_allow_html=True)
