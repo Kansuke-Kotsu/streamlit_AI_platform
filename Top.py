@@ -1,5 +1,4 @@
 import streamlit as st
-st.title("Ai am : AI Platform")
 
 st.title("Ai am")
 st.write("生成AIを用いた様々なサービスを提供するプラットフォームです。\n")
