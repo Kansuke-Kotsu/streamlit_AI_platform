@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Streamlitのアプリタイトル
-st.title("ブログ記事SEO自動生成アプリ")
+st.title("ブログ記事自動生成アプリ")
 
 # APIキーの設定
 genai.configure(api_key=st.secrets["gemini_key"])
