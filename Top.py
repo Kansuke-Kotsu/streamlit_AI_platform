@@ -85,12 +85,10 @@ with col5:
 with col6:
     st.markdown(
         '''
-        <a href="/">
-            <div class="container">
-                <h3>その他の機能</h3>
-                <p>多様なAIサービスを開発中！詳細はお問い合わせください。</p>
-            </div>
-        </a>
+        <div class="container">
+            <h3>その他の機能</h3>
+            <p>多様なAIサービスを開発中！詳細はお問い合わせください。</p>
+        </div>
         ''',
         unsafe_allow_html=True
     )
