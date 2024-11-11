@@ -16,7 +16,7 @@ if st.button("画像を生成"):
     if prompt.strip() == "":
         st.warning("テキストを入力してください。")
     else:
-        with st.spinner("画像を生成中...(30秒くらいかかります)"):
+        with st.spinner("画像を生成中...(1分くらいかかります)"):
             try:
                 response = requests.post(API_URL, headers=headers, json=f"input: {prompt}")
                 image_bytes = response.content
