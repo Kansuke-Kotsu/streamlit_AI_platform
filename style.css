@@ -1,3 +1,63 @@
+
+a {
+  text-decoration: none; /* デフォルトの下線を削除 */
+  color: black; /* リンクの色を継承 */
+}
+
+
+a:hover {
+  text-decoration: none; /* デフォルトの下線を削除 */
+  color: black; /* リンクの色を継承 */
+}
+
+.container {
+  background-color: #ffffff; /* 背景色 */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px; /* 角の丸み */
+  box-shadow: 0 8px 12px rgba(149, 41, 199, 0.1); /* 陰影 */
+  text-align: center;
+  aspect-ratio: 1 / 1; /* 正方形を維持 */
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s; /* ホバー時のアニメーション */
+  color: black; /* リンクの色を継承 */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* ホバー時に持ち上がる効果 */
+  box-shadow: 0 8px 12px rgba(149, 41, 199, 0.25); /* 陰影を強調 */
+  color: black; /* リンクの色を継承 */
+}
+
+.container h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: -0.005em;
+  padding: 0.5rem 0px 1rem;
+  margin: 0px;
+  line-height: 1.2;
+}
+
+.container p {
+  margin: 0px 0px 1rem;
+  padding: 0px;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #e0e0e0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
 footer {
     position: fixed;
     bottom: 0;
