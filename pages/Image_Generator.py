@@ -7,7 +7,7 @@ API_TOKEN = st.secrets["huggingface"]
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
 # ユーザーからの入力を受け取る
-model = st.selectbox(label="", key=("Stable Diffusion 3.5", "FLUX.1"))
+model = st.selectbox("",("Stable Diffusion 3.5", "FLUX.1"))
 prompt = st.text_input("画像にしたいテキストを入力してください:", "")
 
 # 画像の生成ボタン
