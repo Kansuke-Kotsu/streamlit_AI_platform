@@ -3,3 +3,4 @@ google-generativeai
 streamlit
 langchain
 langchain_community
+matplotlib
