@@ -4,3 +4,4 @@ streamlit
 langchain
 langchain_community
 matplotlib
+openai
