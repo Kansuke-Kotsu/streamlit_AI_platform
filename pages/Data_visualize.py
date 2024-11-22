@@ -2,8 +2,6 @@ import streamlit as st
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 import pandas as pd
-import io
-import os
 import matplotlib.pyplot as plt
 
 openai_api_key = st.secrets["OPENAI_API_KEY"] # Streamlit secretsを使用する場合
