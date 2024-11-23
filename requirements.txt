@@ -1,6 +1,6 @@
 langchain-google-genai
 google-generativeai 
-streamlit
+streamlit==1.40.1
 langchain
 langchain_community
 matplotlib
