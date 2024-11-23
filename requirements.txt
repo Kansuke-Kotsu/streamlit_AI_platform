@@ -5,3 +5,11 @@ langchain
 langchain_community
 matplotlib
 openai
+tiktoken
+chromadb
+chardet
+google-search-results
+serpapi
+GoogleSearch
+requests
+beautifulsoup4
