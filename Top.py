@@ -43,10 +43,10 @@ with col2:
 with col3:
     st.markdown(
         '''
-        <a href="/Image_Generator">
+        <a href="/RAG_Chatbot">
             <div class="container">
-                <h3>Image Generator</h3>
-                <p>AIを活用して高品質な画像を自動生成。デザインやコンテンツ作成に役立ちます。</p>
+                <h3>RAG x Chatbot</h3>
+                <p>RAGを活用したChatbot。各パラメータを変更して使用可能</p>
             </div>
         </a>
         ''',
@@ -59,10 +59,10 @@ col4, col5, col6 = st.columns(3)
 with col4:
     st.markdown(
         '''
-        <a href="/Project_Manegement">
+        <a href="/Image_Generator">
             <div class="container">
-                <h3>PM Support Tool</h3>
-                <p>プロジェクト管理を支援するツール。タスクの進捗管理やチームのコミュニケーションを効率化します。</p>
+                <h3>Image Generator</h3>
+                <p>AIを活用して高品質な画像を自動生成。デザインやコンテンツ作成に役立ちます。</p>
             </div>
         </a>
         ''',
