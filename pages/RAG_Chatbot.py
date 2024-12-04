@@ -39,6 +39,10 @@ with st.form("apikey_form"):
     if submitted:
         st.session_state['openai_api_key'] = openai_api_key
         st.session_state['serpapi_api_key'] = serpapi_api_key
+        if st.session_state['openai_api_key']=="":
+            st.session_state['openai_api_key'] = st.secrets["OPENAI_API_KEY"]
+        if st.session_state['serpapi_api_key']=="":
+            st.session_state['serpapi_api_key'] = st.secrets["serpapi_api_key"]
         st.success("APIキーが保存されました。")
 
 # 確認
