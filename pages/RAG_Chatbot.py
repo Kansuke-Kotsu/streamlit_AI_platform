@@ -45,7 +45,7 @@ if not st.session_state['openai_api_key'] or not st.session_state['serpapi_api_k
             if st.session_state['serpapi_api_key']=="":
                 st.session_state['serpapi_api_key'] = st.secrets["serpapi_api_key"]
             st.success("APIキーが保存されました。")
-            #st.rerun() # Rerun to hide the form
+            st.rerun() # Rerun to hide the form
 
 # 確認
 if not st.session_state['openai_api_key'] or not st.session_state['serpapi_api_key']:
