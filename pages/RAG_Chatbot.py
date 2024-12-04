@@ -58,10 +58,11 @@ serpapi_api_key = st.session_state['serpapi_api_key']
 # パラメータ設定
 with st.sidebar:
     st.subheader("パラメータ設定")
+    search_method = st.selectbox("検索方法", ["ベクトル検索", "キーワード検索"])
     chunk_size = st.number_input("Chunk Size", min_value=100, max_value=5000, value=1000, step=100)
     chunk_overlap = st.number_input("Chunk Overlap", min_value=0, max_value=1000, value=200, step=50)
     num_results = st.number_input("Number of Google Search Results", min_value=1, max_value=10, value=3, step=1)
-    search_method = st.selectbox("検索方法", ["ベクトル検索", "キーワード検索"])
+    
 
 # 質問の入力と検索結果の保存
 if "search_results" not in st.session_state:
