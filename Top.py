@@ -1,5 +1,10 @@
 import streamlit as st
 
+
+# Streamlitのページ設定
+st.set_page_config(page_title="Ai am")
+
+
 st.title("Ai am")
 st.write("生成AIを用いた様々なサービスを提供するプラットフォームです。\n")
 st.write("←から機能を選んで試してみてください。\n")
