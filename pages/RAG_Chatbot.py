@@ -30,9 +30,8 @@ if 'openai_api_key' not in st.session_state:
 if 'serpapi_api_key' not in st.session_state:
     st.session_state['serpapi_api_key'] = ""
 
-# 確認
+# 入力フォーム
 if not st.session_state['openai_api_key'] or not st.session_state['serpapi_api_key']:
-    # 入力フォーム
     with st.form("apikey_form"):
         openai_api_key = st.text_input("Enter your OpenAI API Key", type="password", value=st.session_state['openai_api_key'])
         serpapi_api_key = st.text_input("Enter your SerpAPI Key", type="password", value=st.session_state['serpapi_api_key'])
@@ -46,6 +45,9 @@ if not st.session_state['openai_api_key'] or not st.session_state['serpapi_api_k
             if st.session_state['serpapi_api_key']=="":
                 st.session_state['serpapi_api_key'] = st.secrets["serpapi_api_key"]
             st.success("APIキーが保存されました。")
+
+# 確認
+if not st.session_state['openai_api_key'] or not st.session_state['serpapi_api_key']:
     st.warning("OpenAI APIキーとSerpAPIキーを入力してください。")
     st.stop()
 
