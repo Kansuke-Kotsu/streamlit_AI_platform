@@ -1,5 +1,7 @@
 pip
-langchain-google-genai
+langchain==0.3.7
+langchain-community==0.3.7
+langchain-google-genai==2.0.5
 google-generativeai 
 streamlit
 langchain
@@ -10,6 +12,7 @@ tiktoken
 chromadb
 chardet
 google-search-results==2.4.2
-serpapi
+googleapis-common-protos==1.66.0
+serpapi==0.1.5
 requests
 beautifulsoup4
