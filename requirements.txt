@@ -5,6 +5,7 @@ langchain-core
 langchain-google-genai==2.0.5
 google-generativeai 
 google-search-results==2.4.2
+google-serp-api
 googleapis-common-protos==1.66.0
 serpapi==0.1.5
 streamlit
