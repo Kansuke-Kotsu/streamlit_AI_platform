@@ -1,16 +1,16 @@
-pip
-langchain
-langchain-community
-langchain-google-genai==2.0.5
-google-generativeai 
-google-search-results==2.4.2
-googleapis-common-protos==1.66.0
-serpapi==0.1.5
-streamlit
-matplotlib
-openai
-tiktoken
-chromadb
-chardet
-requests
-beautifulsoup4
+langchain>=0.0.31,<0.0.32  # Example of a more flexible version constraint
+langchain-community>=0.0.31,<0.0.32
+langchain-core>=0.0.31,<0.0.32
+langchain-google-genai>=2.0.5,<3.0.0
+google-generativeai>=0.2.0,<0.3.0 #example
+google-search-results>=2.4.2,<2.5.0
+googleapis-common-protos>=1.66.0,<2.0.0
+serpapi>=0.1.5,<0.2.0
+streamlit>=1.22.0,<2.0.0  # Example of version constraints
+matplotlib>=3.7.0,<4.0.0
+openai>=0.27.8,<0.28.0
+tiktoken>=0.3.3,<0.4.0
+chromadb>=0.3.26,<0.4.0
+chardet>=5.0.0,<6.0.0
+requests>=2.31.0,<3.0.0
+beautifulsoup4>=4.11.1,<5.0.0
