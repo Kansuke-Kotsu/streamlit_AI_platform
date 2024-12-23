@@ -1,5 +1,4 @@
 pip==24.2
-python==3.10.0
 langchain==0.3.7
 langchain-community==0.3.7
 langchain-google-genai==2.0.5
