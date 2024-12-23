@@ -7,8 +7,6 @@ google-generativeai
 google-search-results==2.4.2
 googleapis-common-protos==1.66.0
 streamlit
-langchain
-langchain_community
 matplotlib
 openai
 tiktoken
