@@ -1,6 +1,7 @@
 pip
 langchain-google-genai
 google-generativeai 
+GoogleSearch
 streamlit
 langchain
 langchain_community
