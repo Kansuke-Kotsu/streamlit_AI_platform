@@ -1,11 +1,11 @@
-pip==24.2
-langchain==0.3.7
-langchain-community==0.3.7
+pip
+langchain
+langchain-community
 langchain-google-genai==2.0.5
-serpapi==0.1.5
 google-generativeai 
 google-search-results==2.4.2
 googleapis-common-protos==1.66.0
+serpapi==0.1.5
 streamlit
 matplotlib
 openai
